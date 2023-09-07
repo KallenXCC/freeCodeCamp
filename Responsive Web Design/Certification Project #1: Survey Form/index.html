@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Practice Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">This is a practice survey.</p>
+  <form id="survey-form">
+    <label id="name-label" for "name"> Name:* <input id="name" type="text" placeholder="Firstname Lastname" required></label>
+    <label id="email-label" for "email"> Email:* <input id="email" type="email" placeholder="sample@sample.com" required></label>
+    <label id="number-label" for "number"> Number (0-100): <input id="number" type="number" min="0" max="100" placeholder="Choose a number 0-100"></label>
+    <label for="dropdown"> Yes or no?
+      <select id="dropdown">
+        <option> Yes </option>
+        <option> No </option>
+      </select>
+    </label>
+    <label for="bbl1"><input id="bbl1" name="bubble" type="radio" class="inline" value="yesbbl"> Yes </label>
+    <label for="bbl2"><input name="bubble" type="radio" class="inline" value="nobbl"> No </label>
+    <label> Which one? </label>
+    <label for="cbox1"><input id="cbox1" value="cbox1" type="checkbox" class="inline"> 1 </label>
+    <label for="cbox2"><input id="cbox2" value="cbox2" type="checkbox" class="inline"> 2 </label>
+    <label for="cbox3"><input id="cbox3" value="cbox3" type="checkbox" class="inline"> 3 </label>
+    <label for="txtarea"> Write text: <textarea id="txtarea" placeholder="Whatever you want"></textarea></label>
+    <input id="submit" type="Submit">
+  </form>
+</body>
+</html>
