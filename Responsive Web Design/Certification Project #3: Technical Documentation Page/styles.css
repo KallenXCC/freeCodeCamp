@@ -1,0 +1,58 @@
+  * {
+    font-family: Helvetica;
+  }
+  
+  nav {
+    height: 100%; /* 100% Full-height */
+    width: 130;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #818181;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+  }
+  
+  /* The navigation menu links */
+  nav header, a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #111;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  nav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  main {
+    padding-left: 160px;
+    padding-top: 20px;
+  }
+  
+  section {
+    padding-bottom: 50px;
+  }
+  
+  section header {
+    font-weight: bold;
+    font-size: 1.2em; 
+  }
+  
+  code {
+    font-family: Courier;
+  }
+  
+  li {
+    padding-top: 15px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    nav {padding-top: 15px;}
+    nav a {font-size: 18px;}
+  }
