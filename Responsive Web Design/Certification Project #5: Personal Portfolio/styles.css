@@ -1,0 +1,58 @@
+* {
+    font-family: Helvetica;
+}
+
+header {
+  height: 35; /* 100% Full-height */
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #818181;
+  overflow-y: hidden;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* The navigation menu links */
+header nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #111;
+}
+
+/* When you mouse over the navigation links, change their color */
+nav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+main {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+section {
+  display: flex;
+  place-items: center;
+  height: 100vh;
+}
+
+section header {
+  font-weight: bold;
+  font-size: 1.2em; 
+}
+
+@media (max-width: 350px) {
+  header {
+    font-size: 0.8em;
+  }
+  header nav a {
+    font-size: 0.8em;
+  }
+}
