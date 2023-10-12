@@ -112,23 +112,16 @@ const watchList = [
     }
   ];
   
-  // Only change code below this line
-  /*
-  const ratings = [];
-  for (let i = 0; i < watchList.length; i++) {
-    ratings.push({title: watchList[i]["Title"], rating: watchList[i]["imdbRating"]});
+  function getRating(watchList) {
+    // Only change code below this line
+    let averageRating = 0;
+    let nolanMovies = watchList.map(movie => ({director: movie["Director"], rating: movie["imdbRating"]})).filter(movie => movie["director"] == "Christopher Nolan");
+    console.log(nolanMovies);
+    let ratingSum = nolanMovies.reduce((sum, movie) => sum + Number(movie["rating"]), 0);
+    console.log(ratingSum);
+    averageRating = ratingSum / nolanMovies.length;
+    // Only change code above this line
+    return averageRating;
   }
-  console.log(ratings);
-  */
-  const ratings = watchList.map(movie => ({title: movie["Title"], rating: movie["imdbRating"]}));
-  console.log(ratings);
   
-  // Only change code above this line
-  
-  console.log(JSON.stringify(ratings));
-
-  /*Syntax:
-  argument => function using argument
-  {} creates an object
-  ({}) parentheses are needed around the object
-  ((arg) => arg * 3) is shorthand for (function(arg){return arg * 3})*/
+  console.log(getRating(watchList));
